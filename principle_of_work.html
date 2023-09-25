@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="semantic/dist/semantic.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+
+    <title>API Service</title>
+  </head>
+
+  <body>
+    <div class="grid__areas">
+      <div class="ui inverted segment">
+        <div class="ui inverted secondary pointing menu">
+          <form action="index.html" target="_self">
+            <button class="ui secondary button">Home</button>
+          </form>
+          <form action="about_us.html" target="_self">
+            <button class="ui secondary button">О нас</button>
+          </form>
+          <form action="contacts.html" target="_self">
+            <button class="ui secondary button">Контакты</button>
+          </form>
+          <form action="nav_panel.html" target="_self" class="hidden__button">
+            <button class="ui secondary button">Навигация</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <div class="sidebar_buttons">
+          <form action="security.html" target="_self">
+            <button class="ui button sidebar_">Безопасность</button>
+          </form>
+          <form action="principle_of_work.html" target="_self">
+            <button class="ui button sidebar_">Принцип работы</button>
+          </form>
+          <form action="advantage.html" target="_self">
+            <button class="ui button sidebar_">Преимущества</button>
+          </form>
+          <form action="types_api.html" target="_self">
+            <button class="ui button sidebar_">Типы API</button>
+          </form>
+          <form action="REST.html" target="_self">
+            <button class="ui button sidebar_">REST</button>
+          </form>
+          <form action="SOAP.html" target="_self">
+            <button class="ui button sidebar_">SOAP</button>
+          </form>
+          <form action="GraphQL.html" target="_self">
+            <button class="ui button sidebar_">GraphQL</button>
+          </form>
+          <form action="videos.html" target="_self">
+            <button class="ui button sidebar_">Обучалки</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="text__main">
+        <h2 class="ui header">А как работает API?</h2>
+        <p>
+          API позволяет одному программному компоненту (называемому клиентом)
+          использовать функциональность другого компонента (называемого
+          сервером) без необходимости знать, как именно работает этот компонент
+          внутри.
+        </p>
+
+        <div class="img__api">
+          <img
+            class="ui image"
+            src="icons/working_api.png"
+            width="600px"
+            height="300px"
+          />
+        </div>
+        <p>
+          Принцип работы API сервисов можно разделить на несколько основных
+          шагов:
+        </p>
+        <div class="ui bulleted list item list__p">
+          <div class="item item__header">Запрос (Request):</div>
+          <p>
+            Клиент отправляет HTTP-запрос (обычно GET, POST, PUT, DELETE и др.)
+            к серверу, указывая необходимый URL-адрес и параметры запроса.
+          </p>
+          <p>
+            В запросе также могут быть заголовки, которые содержат
+            дополнительную информацию.
+          </p>
+
+          <div class="item item__header">Обработка запроса:</div>
+          <p>
+            Сервер, получив запрос, анализирует его и определяет, какой именно
+            функциональности клиент требует.
+          </p>
+          <p>
+            Сервер может провести проверку наличия прав доступа или
+            аутентификации пользователя.
+          </p>
+
+          <div class="item item__header">Выполнение действия:</div>
+          <p>
+            После анализа запроса сервер выполняет необходимые действия или
+            операции.
+          </p>
+          <p>
+            Эти операции могут варьироваться от простого чтения данных из базы
+            данных до сложных вычислительных операций.
+          </p>
+          <div class="item item__header">Формирование ответа (Response):</div>
+          <p>После выполнения операции сервер формирует HTTP-ответ.</p>
+          <p>
+            Ответ включает в себя статусный код, который указывает на успешность
+            выполнения запроса (например, 200 OK для успешного запроса или 404
+            Not Found для несуществующего ресурса).
+          </p>
+          <p>
+            Ответ также может содержать данные, которые клиент запрашивал или
+            информацию о выполненной операции.
+          </p>
+          <div class="item item__header">Отправка ответа клиенту:</div>
+          <p>
+            Сервер отправляет HTTP-ответ клиенту, который обычно представляет
+            собой структурированный текст, например, JSON или XML.
+          </p>
+          <p>
+            Клиент, получив ответ, анализирует его и обрабатывает данные или
+            отображает информацию для пользователя.
+          </p>
+        </div>
+        <p>
+          API могут быть использованы для разнообразных целей, таких как доступ
+          к данным, управление ресурсами, интеграция с внешними сервисами и
+          многое другое. Применение API широко распространено в разработке
+          веб-приложений, мобильных приложений, а также в области интеграции
+          различных систем.
+        </p>
+        <p>
+          Примеры популярных API включают в себя API социальных сетей (например,
+          Facebook Graph API), API для работы с геоданными (например, Google
+          Maps API), API для платежных систем (например, PayPal API), и многие
+          другие.
+        </p>
+        <p>Вот наглядное сравнение различных API и их характеристик:</p>
+        <table class="ui compact celled unstackable table">
+          <thead>
+            <tr>
+              <th>Сервис/API</th>
+              <th>Описание</th>
+              <th>Основные возможности</th>
+              <th>Стоимость</th>
+              <th>Аутентификация</th>
+              <th>Примеры использования</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Name">Google Maps API</td>
+              <td data-label="Description">Географические карты</td>
+              <td data-label="Features">
+                Отображение карт, геокодинг, маршруты
+              </td>
+              <td data-label="Cost">Платно</td>
+              <td data-label="Authentication">API-ключ</td>
+              <td data-label="Examples">Карта на сайте, поиск мест</td>
+            </tr>
+            <tr>
+              <td data-label="Name">Twitter API</td>
+              <td data-label="Description">Социальные сети</td>
+              <td data-label="Features">Получение твитов, постинг</td>
+              <td data-label="Cost">Бесплатно</td>
+              <td data-label="Authentication">OAuth</td>
+              <td data-label="Examples">Встроенный твиттер-фид</td>
+            </tr>
+            <tr>
+              <td data-label="Name">OpenWeather API</td>
+              <td data-label="Description">Погодные данные</td>
+              <td data-label="Features">Получение погоды по координатам</td>
+              <td data-label="Cost">Бесплатно</td>
+              <td data-label="Authentication">API-ключ</td>
+              <td data-label="Examples">Показ текущей погоды</td>
+            </tr>
+            <tr>
+              <td data-label="Name">Facebook Graph API</td>
+              <td data-label="Description">Социальные сети</td>
+              <td data-label="Features">Получение данных о пользователях</td>
+              <td data-label="Cost">Бесплатно</td>
+              <td data-label="Authentication">OAuth</td>
+              <td data-label="Examples">Авторизация через Facebook</td>
+            </tr>
+            <tr>
+              <td data-label="Name">PayPal API</td>
+              <td data-label="Description">Платежи</td>
+              <td data-label="Features">Оплата товаров и услуг</td>
+              <td data-label="Cost">Платно</td>
+              <td data-label="Authentication">OAuth/Token</td>
+              <td data-label="Examples">Принятие онлайн-платежей</td>
+            </tr>
+            <tr>
+              <td data-label="Name">YouTube API</td>
+              <td data-label="Description">Видео</td>
+              <td data-label="Features">Вставка видео на сайт</td>
+              <td data-label="Cost">Бесплатно</td>
+              <td data-label="Authentication">API-ключ</td>
+              <td data-label="Examples">Видеогалерея на сайте</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <footer>
+      <h4>
+        <i
+          >The site is built by Egor Parshutkin, using
+          <a href="https://semantic-ui.com" target="_blank"
+            ><b>SEMANTIC UI framework</b></a
+          ></i
+        >
+      </h4>
+    </footer>
+  </body>
+</html>

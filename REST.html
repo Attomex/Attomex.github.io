@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="semantic/dist/semantic.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+
+    <title>API Service</title>
+  </head>
+
+  <body>
+    <div class="grid__areas">
+      <div class="ui inverted segment">
+        <div class="ui inverted secondary pointing menu">
+          <form action="index.html" target="_self">
+            <button class="ui secondary button">Home</button>
+          </form>
+          <form action="about_us.html" target="_self">
+            <button class="ui secondary button">О нас</button>
+          </form>
+          <form action="contacts.html" target="_self">
+            <button class="ui secondary button">Контакты</button>
+          </form>
+          <form action="nav_panel.html" target="_self" class="hidden__button">
+            <button class="ui secondary button">Навигация</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <div class="sidebar_buttons">
+          <form action="security.html" target="_self">
+            <button class="ui button sidebar_">Безопасность</button>
+          </form>
+          <form action="principle_of_work.html" target="_self">
+            <button class="ui button sidebar_">Принцип работы</button>
+          </form>
+          <form action="advantage.html" target="_self">
+            <button class="ui button sidebar_">Преимущества</button>
+          </form>
+          <form action="types_api.html" target="_self">
+            <button class="ui button sidebar_">Типы API</button>
+          </form>
+          <form action="REST.html" target="_self">
+            <button class="ui button sidebar_">REST</button>
+          </form>
+          <form action="SOAP.html" target="_self">
+            <button class="ui button sidebar_">SOAP</button>
+          </form>
+          <form action="GraphQL.html" target="_self">
+            <button class="ui button sidebar_">GraphQL</button>
+          </form>
+          <form action="videos.html" target="_self">
+            <button class="ui button sidebar_">Обучалки</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="text__main">
+        <h2 class="ui header">
+          RESTful API (Representational State Transfer):
+        </h2>
+        <p>
+          REST (Representational State Transfer) - это архитектурный стиль для
+          проектирования сетевых приложений и API. Он не является стандартом или
+          протоколом, а скорее набором принципов и ограничений, которые помогают
+          создавать простые и эффективные веб-сервисы. REST - для простых и
+          кэшируемых операций.
+        </p>
+        <p>Основные характеристики RESTful API:</p>
+        <div class="ui bulleted list item list__p">
+          <div class="item item__header">Ресурсы:</div>
+          <p>
+            В REST, всё является ресурсами (например, объектами или данные).
+            Каждый ресурс имеет уникальный идентификатор в виде URL.
+          </p>
+          <div class="item item__header">HTTP методы:</div>
+          <p>
+            REST использует стандартные HTTP методы, такие как GET (чтение),
+            POST (создание), PUT (обновление) и DELETE (удаление), для
+            выполнения операций над ресурсами.
+          </p>
+          <div class="item item__header">Состояние и представление:</div>
+          <p>
+            Клиенты RESTful API могут запрашивать представления ресурсов в
+            различных форматах, таких как JSON или XML. Сервер отвечает
+            представлением состояния ресурса.
+          </p>
+          <div class="item item__header">Без состояния:</div>
+          <p>
+            RESTful API не хранят состояние клиента на сервере между запросами.
+            Каждый запрос от клиента содержит всю необходимую информацию для
+            выполнения операции.
+          </p>
+          <div class="item item__header">Ограничения:</div>
+          <p>
+            RESTful API следует ряду ограничений, включая кэширование,
+            однозначность и однородный интерфейс.
+          </p>
+          <div class="item item__header">Гибкость и простота:</div>
+          <p>
+            REST пропагандирует простой и понятный интерфейс, что делает его
+            легко понимаемым и использованием.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <h4>
+        <i
+          >The site is built by Egor Parshutkin, using
+          <a href="https://semantic-ui.com" target="_blank"
+            ><b>SEMANTIC UI framework</b></a
+          ></i
+        >
+      </h4>
+    </footer>
+  </body>
+</html>

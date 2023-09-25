@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="semantic/dist/semantic.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+
+    <title>API Service</title>
+  </head>
+
+  <body>
+    <div class="grid__areas">
+      <div class="ui inverted segment">
+        <div class="ui inverted secondary pointing menu">
+          <form action="index.html" target="_self">
+            <button class="ui secondary button">Home</button>
+          </form>
+          <form action="about_us.html" target="_self">
+            <button class="ui secondary button">О нас</button>
+          </form>
+          <form action="contacts.html" target="_self">
+            <button class="ui secondary button">Контакты</button>
+          </form>
+          <form action="nav_panel.html" target="_self" class="hidden__button">
+            <button class="ui secondary button">Навигация</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <div class="sidebar_buttons">
+          <form action="security.html" target="_self">
+            <button class="ui button sidebar_">Безопасность</button>
+          </form>
+          <form action="principle_of_work.html" target="_self">
+            <button class="ui button sidebar_">Принцип работы</button>
+          </form>
+          <form action="advantage.html" target="_self">
+            <button class="ui button sidebar_">Преимущества</button>
+          </form>
+          <form action="types_api.html" target="_self">
+            <button class="ui button sidebar_">Типы API</button>
+          </form>
+          <form action="REST.html" target="_self">
+            <button class="ui button sidebar_">REST</button>
+          </form>
+          <form action="SOAP.html" target="_self">
+            <button class="ui button sidebar_">SOAP</button>
+          </form>
+          <form action="GraphQL.html" target="_self">
+            <button class="ui button sidebar_">GraphQL</button>
+          </form>
+          <form action="videos.html" target="_self">
+            <button class="ui button sidebar_">Обучалки</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="text__main">
+        <h2 class="ui header">GraphQL:</h2>
+        <p>
+          GraphQL - это язык запросов и среда выполнения для вашего API,
+          разработанные Facebook. Он предоставляет клиентам возможность
+          запрашивать только те данные, которые им нужны, в едином запросе, в
+          отличие от REST, где клиенты получают предопределенные наборы данных.
+          GraphQL - для сценариев, где клиенты требуют гибких запросов и
+          реального времени.
+        </p>
+        <p>Основные характеристики GraphQL:</p>
+        <div class="ui bulleted list item list__p">
+          <div class="item item__header">Гибкие запросы:</div>
+          <p>
+            Клиенты могут указывать точно, какие данные им нужны, и получать их
+            в одном запросе. Нет необходимости делать несколько запросов для
+            разных данных.
+          </p>
+          <div class="item item__header">Схема данных:</div>
+          <p>
+            GraphQL API определяет строгую схему данных, которая описывает
+            доступные типы данных и запросы. Это позволяет клиентам заранее
+            знать, какие данные они могут запросить.
+          </p>
+          <div class="item item__header">Однородный интерфейс:</div>
+          <p>
+            Все запросы и мутации (изменения данных) имеют единый путь в виде
+            единого точечного входа (обычно /graphql).
+          </p>
+          <div class="item item__header">Типизированные данные:</div>
+          <p>
+            GraphQL использует типы данных для описания структуры данных и
+            возвращаемых значений, что делает API более строгим и надежным.
+          </p>
+          <div class="item item__header">Реальное время:</div>
+          <p>
+            GraphQL поддерживает подписку на данные в реальном времени, что
+            делает его подходящим для приложений, требующих динамически
+            обновляемых данных.
+          </p>
+          <div class="item item__header">Отсутствие "перегрузки" данных:</div>
+          <p>
+            Клиенты получают только те данные, которые запросили, что снижает
+            ненужный трафик и улучшает производительность.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <h4>
+        <i
+          >The site is built by Egor Parshutkin, using
+          <a href="https://semantic-ui.com" target="_blank"
+            ><b>SEMANTIC UI framework</b></a
+          ></i
+        >
+      </h4>
+    </footer>
+  </body>
+</html>

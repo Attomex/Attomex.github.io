@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="semantic/dist/semantic.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+
+    <title>API Service</title>
+  </head>
+
+  <body>
+    <div class="grid__areas">
+      <div class="ui inverted segment">
+        <div class="ui inverted secondary pointing menu">
+          <form action="index.html" target="_self">
+            <button class="ui secondary button">Home</button>
+          </form>
+          <form action="about_us.html" target="_self">
+            <button class="ui secondary button">О нас</button>
+          </form>
+          <form action="contacts.html" target="_self">
+            <button class="ui secondary button">Контакты</button>
+          </form>
+          <form action="nav_panel.html" target="_self" class="hidden__button">
+            <button class="ui secondary button">Навигация</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <div class="sidebar_buttons">
+          <form action="security.html" target="_self">
+            <button class="ui button sidebar_">Безопасность</button>
+          </form>
+          <form action="principle_of_work.html" target="_self">
+            <button class="ui button sidebar_">Принцип работы</button>
+          </form>
+          <form action="advantage.html" target="_self">
+            <button class="ui button sidebar_">Преимущества</button>
+          </form>
+          <form action="types_api.html" target="_self">
+            <button class="ui button sidebar_">Типы API</button>
+          </form>
+          <form action="REST.html" target="_self">
+            <button class="ui button sidebar_">REST</button>
+          </form>
+          <form action="SOAP.html" target="_self">
+            <button class="ui button sidebar_">SOAP</button>
+          </form>
+          <form action="GraphQL.html" target="_self">
+            <button class="ui button sidebar_">GraphQL</button>
+          </form>
+          <form action="videos.html" target="_self">
+            <button class="ui button sidebar_">Обучалки</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="text__main">
+        <h2 class="ui header">SOAP API (Simple Object Access Protocol):</h2>
+        <p>
+          SOAP (Simple Object Access Protocol) - это протокол для обмена
+          структурированными сообщениями в распределенных вычислительных средах,
+          таких как сети и интернет. Он был разработан для поддержки вызовов
+          удаленных процедур (RPC) и обмена данными между различными
+          приложениями, работающими на разных платформах.
+        </p>
+        <p>Основные характеристики SOAP API:</p>
+        <div class="ui bulleted list item list__p">
+          <div class="item item__header">Протокол передачи данных:</div>
+          <p>
+            SOAP может использовать различные протоколы для передачи данных,
+            такие как HTTP, SMTP, TCP и другие. В большинстве случаев, SOAP API
+            использует HTTP или HTTPS.
+          </p>
+          <div class="item item__header">Формат данных:</div>
+          <p>
+            SOAP использует XML для представления данных. Это означает, что все
+            сообщения SOAP составлены в формате XML, что делает их читаемыми как
+            для человека, так и для машины.
+          </p>
+          <div class="item item__header">Структурированные сообщения:</div>
+          <p>
+            SOAP сообщения обычно имеют строго определенную структуру, включая
+            заголовок (header) и тело (body). Заголовок может содержать
+            метаданные и информацию о безопасности, а тело содержит собственно
+            данные или запросы к удаленным методам.
+          </p>
+          <div class="item item__header">WS-Security:</div>
+          <p>
+            SOAP поддерживает стандарт WS-Security, что делает его подходящим
+            для обмена данными, требующими высокого уровня безопасности.
+            WS-Security позволяет включать цифровые подписи и шифрование в SOAP
+            сообщения.
+          </p>
+          <div class="item item__header">Сложность и гибкость:</div>
+          <p>
+            SOAP может обрабатывать сложные сценарии, включая транзакции,
+            координацию и управление ошибками. Однако он также может быть более
+            громоздким и менее гибким в сравнении с другими протоколами, такими
+            как REST.
+          </p>
+        </div>
+        <p>
+          SOAP помогает разработчикам вызывать процессы, запущенные в различных
+          операционных системах, таких как Linux, macOS, Windows и т. Д., Для
+          авторизации, аутентификации и взаимодействия с XML(Extensible Markup
+          Language). Веб-протоколы, такие как HTTP, работают почти во всех
+          операционных системах; следовательно, SOAP также позволяет своим
+          клиентам вызывать веб-сервисы и получать ответы независимо от платформ
+          и языков. SOAP подходит для сложных бизнес-приложений.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <h4>
+        <i
+          >The site is built by Egor Parshutkin, using
+          <a href="https://semantic-ui.com" target="_blank"
+            ><b>SEMANTIC UI framework</b></a
+          ></i
+        >
+      </h4>
+    </footer>
+  </body>
+</html>

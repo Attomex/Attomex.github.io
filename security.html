@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="semantic/dist/semantic.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+
+    <title>API Service</title>
+  </head>
+
+  <body>
+    <div class="grid__areas">
+      <div class="ui inverted segment">
+        <div class="ui inverted secondary pointing menu">
+          <form action="index.html" target="_self">
+            <button class="ui secondary button">Home</button>
+          </form>
+          <form action="about_us.html" target="_self">
+            <button class="ui secondary button">О нас</button>
+          </form>
+          <form action="contacts.html" target="_self">
+            <button class="ui secondary button">Контакты</button>
+          </form>
+          <form action="nav_panel.html" target="_self" class="hidden__button">
+            <button class="ui secondary button">Навигация</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <div class="sidebar_buttons">
+          <form action="security.html" target="_self">
+            <button class="ui button sidebar_">Безопасность</button>
+          </form>
+          <form action="principle_of_work.html" target="_self">
+            <button class="ui button sidebar_">Принцип работы</button>
+          </form>
+          <form action="advantage.html" target="_self">
+            <button class="ui button sidebar_">Преимущества</button>
+          </form>
+          <form action="types_api.html" target="_self">
+            <button class="ui button sidebar_">Типы API</button>
+          </form>
+          <form action="REST.html" target="_self">
+            <button class="ui button sidebar_">REST</button>
+          </form>
+          <form action="SOAP.html" target="_self">
+            <button class="ui button sidebar_">SOAP</button>
+          </form>
+          <form action="GraphQL.html" target="_self">
+            <button class="ui button sidebar_">GraphQL</button>
+          </form>
+          <form action="videos.html" target="_self">
+            <button class="ui button sidebar_">Обучалки</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="text__main">
+        <h2 class="ui header">О безопасности при использовании API</h2>
+        <p>
+          Соблюдение безопасности при работе с API сервисами представляет собой
+          фундаментальную задачу, особенно в контексте разработки веб-сайтов и
+          приложений. Ниже мы рассмотрим ключевые аспекты обеспечения
+          безопасности API:
+        </p>
+        <div class="ui bulleted list item list__p">
+          <div class="item item__header">Автоматизация</div>
+          <p>
+            <i>Аутентификация</i>: Одним из важнейших моментов является наличие
+            надежной системы аутентификации в API, которая позволит разрешать
+            доступ только правомочным пользователям. Это может быть реализовано
+            с использованием различных методов, таких как API-ключи, токены,
+            базовая аутентификация, OAuth и др.
+          </p>
+          <p>
+            <i>Авторизация</i>: После успешной аутентификации необходимо строго
+            ограничить доступ к функционалу или данным, определяя, какие
+            операции пользователь имеет право выполнять.
+          </p>
+          <div class="item item__header">
+            Защита от CSRF (межсайтовой подделки запросов):
+          </div>
+          <p>
+            Эта мера безопасности предназначена для предотвращения атак, при
+            которых злоумышленники могут выполнить действия от имени
+            авторизованных пользователей без их согласия. Защита от CSRF
+            включает в себя использование специальных механизмов, таких как
+            токены CSRF, для проверки подлинности запросов.
+          </p>
+          <div class="item item__header">Защита от инъекций:</div>
+          <p>
+            Защита от инъекций предназначена для предотвращения атак, при
+            которых злоумышленники внедряют вредоносный код или команды во
+            входные данные API. Для этого входные данные должны быть корректно
+            валидированы и экранированы, чтобы предотвратить выполнение
+            вредоносных операций.
+          </p>
+          <div class="item item__header">
+            Ограничение скорости и защита от DDoS-атак:
+          </div>
+          <p>
+            Для предотвращения атак на перегрузку и отказ в обслуживании (DDoS),
+            API должно включать в себя механизмы ограничения скорости запросов.
+            Это помогает управлять трафиком и предотвращать перегрузку серверов.
+          </p>
+          <div class="item item__header">Шифрование данных (HTTPS):</div>
+          <p>
+            Шифрование данных с использованием протокола HTTPS обеспечивает
+            конфиденциальность и целостность передаваемой информации. Это
+            гарантирует, что данные между клиентом и сервером передаются в
+            зашифрованной форме, что делает их недоступными для посторонних лиц.
+          </p>
+          <div class="item item__header">Логирование и мониторинг:</div>
+          <p>
+            Ведение детальных логов всех запросов и событий в API является
+            важным компонентом безопасности. Логи могут использоваться для
+            обнаружения и анализа потенциальных угроз, а также для мониторинга
+            работы API.
+          </p>
+          <div class="item item__header">
+            Двухфакторная аутентификация (2FA):
+          </div>
+          <p>
+            2FA предоставляет дополнительный уровень безопасности, требуя от
+            пользователей предоставить два разных фактора для аутентификации.
+            Обычно это что-то, что пользователь знает (например, пароль) и
+            что-то, что пользователь имеет (например, одноразовый код из
+            приложения аутентификации).
+          </p>
+        </div>
+        <p>
+          Эти аспекты безопасности важны для обеспечения защиты API и данных
+          пользователей. Реализация этих мер позволяет уменьшить риски,
+          связанные с использованием API, и обеспечить безопасное взаимодействие
+          с вашими сервисами.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <h4>
+        <i
+          >The site is built by Egor Parshutkin, using
+          <a href="https://semantic-ui.com" target="_blank"
+            ><b>SEMANTIC UI framework</b></a
+          ></i
+        >
+      </h4>
+    </footer>
+  </body>
+</html>

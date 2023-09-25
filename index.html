@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="semantic/dist/semantic.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+
+    <title>API Service</title>
+  </head>
+
+  <body>
+    <div class="grid__areas">
+      <div class="ui inverted segment">
+        <div class="ui inverted secondary pointing menu" >
+          <form action="index.html" target="_self">
+            <button class="ui secondary button">Home</button>
+          </form>
+          <form action="about_us.html" target="_self">
+            <button class="ui secondary button">О нас</button>
+          </form>
+          <form action="contacts.html" target="_self">
+            <button class="ui secondary button">Контакты</button>
+          </form>
+          <form action="nav_panel.html" target="_self" class="hidden__button">
+            <button class="ui secondary button">Навигация</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <div class="sidebar_buttons">
+          <form action="security.html" target="_self">
+            <button class="ui button sidebar_">Безопасность</button>
+          </form>
+          <form action="principle_of_work.html" target="_self">
+            <button class="ui button sidebar_">Принцип работы</button>
+          </form>
+          <form action="advantage.html" target="_self">
+            <button class="ui button sidebar_">Преимущества</button>
+          </form>
+          <form action="types_api.html" target="_self">
+            <button class="ui button sidebar_">Типы API</button>
+          </form>
+          <form action="REST.html" target="_self">
+            <button class="ui button sidebar_">REST</button>
+          </form>
+          <form action="SOAP.html" target="_self">
+            <button class="ui button sidebar_">SOAP</button>
+          </form>
+          <form action="GraphQL.html" target="_self">
+            <button class="ui button sidebar_">GraphQL</button>
+          </form>
+          <form action="videos.html" target="_self">
+            <button class="ui button sidebar_">Обучалки</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="text__main">
+        <h1 class="ui center aligned header">
+          Использование API сервисов при разработке сайта
+        </h1>
+
+        <h2 class="ui header">Что такое API?</h2>
+        <p>
+          <b
+            >Application Programming Interface (API) (программный интерфейс
+            приложения)</b
+          >
+          — набор инструментов, которые позволяют взаимодействовать программам и
+          приложениям друг с другом, использовать функции одного внутри другого.
+        </p>
+
+        <p>
+          Чтобы было понятнее, приведем пример. Многие сайты используют у себя
+          на странице контактов Яндекс.Карты, это возможно благодаря
+          взаимодействию через API. Также самый популярный способ работы с
+          помощью API соединения – это проведение платежей.
+        </p>
+
+        <p>
+          Интерфейс API позволяет разработчику получать доступ к функциям одного
+          приложения или веб-сайта из другого. Говоря простым языком, дает
+          возможность увеличивать функциональность своего продукта с меньшими
+          усилиями.
+        </p>
+        <br />
+        <div class="img__api">
+          <img class="ui image" src="icons/api_request.png" width=500px height=300px/>
+          <figcaption>
+            Так терминал отправляет запрос в банк, чтобы человек купил билет в
+            кино
+          </figcaption>
+          <br />
+        </div>
+        <p>
+          Программный интерфейс похож на договор между клиентом и продавцом.
+          Только клиентом выступает приложение, которому нужны данные, а
+          продавцом — сервер или ресурс, с которого мы эти данные берём. В таком
+          договоре прописываются условия того, как и какие данные может получить
+          клиент.
+        </p>
+        <p>API встречается практически везде:</p>
+        <div class="ui bulleted list">
+          <div class="item list__p">
+            <p>
+              В языках программирования он помогает функциям корректно общаться
+              друг с другом. Вызывающая функция должна соблюдать тип данных и
+              последовательность параметров вызываемой функции.
+            </p>
+          </div>
+          <div class="item list__p">
+            <p>
+              В операционной системе он помогает программам получать данные из
+              памяти или менять настройки ОС. Поэтому, чтобы разрабатывать
+              приложения под конкретную операционную систему, нужно знать её
+              API.
+            </p>
+          </div>
+          <div class="item list__p">
+            <p>
+              В вебе сервисы общаются друг с другом через программный интерфейс.
+              Если API открытый, то официальную документацию по работе с ним
+              публикуют создатели сервиса-источника.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <h4>
+        <i
+          >The site is built by Egor Parshutkin, using
+          <a href="https://semantic-ui.com" target="_blank"
+            ><b>SEMANTIC UI framework</b></a
+          ></i
+        >
+      </h4>
+    </footer>
+  </body>
+</html>

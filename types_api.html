@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="semantic/dist/semantic.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+
+    <title>API Service</title>
+  </head>
+
+  <body>
+    <div class="grid__areas">
+      <div class="ui inverted segment">
+        <div class="ui inverted secondary pointing menu">
+          <form action="index.html" target="_self">
+            <button class="ui secondary button">Home</button>
+          </form>
+          <form action="about_us.html" target="_self">
+            <button class="ui secondary button">О нас</button>
+          </form>
+          <form action="contacts.html" target="_self">
+            <button class="ui secondary button">Контакты</button>
+          </form>
+          <form action="nav_panel.html" target="_self" class="hidden__button">
+            <button class="ui secondary button">Навигация</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <div class="sidebar_buttons">
+          <form action="security.html" target="_self">
+            <button class="ui button sidebar_">Безопасность</button>
+          </form>
+          <form action="principle_of_work.html" target="_self">
+            <button class="ui button sidebar_">Принцип работы</button>
+          </form>
+          <form action="advantage.html" target="_self">
+            <button class="ui button sidebar_">Преимущества</button>
+          </form>
+          <form action="types_api.html" target="_self">
+            <button class="ui button sidebar_">Типы API</button>
+          </form>
+          <form action="REST.html" target="_self">
+            <button class="ui button sidebar_">REST</button>
+          </form>
+          <form action="SOAP.html" target="_self">
+            <button class="ui button sidebar_">SOAP</button>
+          </form>
+          <form action="GraphQL.html" target="_self">
+            <button class="ui button sidebar_">GraphQL</button>
+          </form>
+          <form action="videos.html" target="_self">
+            <button class="ui button sidebar_">Обучалки</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="text__main">
+        <h2 class="ui header">Типы API, в чем их различия</h2>
+
+        <p>
+          Доступ к API — что это такое? Это возможность работать с приложением и
+          использовать его функции у себя в приложении, программе или на сайте.
+          В связи с этим различают виды API по типу доступа:
+        </p>
+
+        <div class="ui bulleted list">
+          <div class="item list__p">
+            <p>
+              Первый тип — это <b>открытые API</b>, их могут использовать любые
+              приложения и сервисы. Это программные интерфейсы приложений с
+              открытым исходным кодом, к которым может получить доступ любой
+              разработчик. У них определены конечные точки (endpoints) API и
+              форматы запросов и ответов. Это помогает повысить узнаваемость
+              бренда и получить дополнительный источник дохода.
+            </p>
+          </div>
+          <div class="item list__p">
+            <p>
+              <b>Партнерские API</b> — это интерфейсы, доступные
+              бизнес-партнерам. Чтобы использовать такой API, необходимо
+              получить соглашение на использование и иметь учётные данные для
+              доступа. Предоставление своего API партнерам даёт возможность
+              дополнительных доходов.
+            </p>
+          </div>
+          <div class="item list__p">
+            <p>
+              <b>Внутренние или частные API</b> скрыты от внешних пользователей.
+              Эти API используются внутри компании и предназначены для повышения
+              производительности и взаимодействия между различными внутренними
+              сервисами или для создания новых систем или приложений для
+              клиентов, использующих существующие системы.
+            </p>
+          </div>
+          <div class="item list__p">
+            <p>
+              И еще есть <b>составные API</b>, которые объединяют API. Эти
+              службы позволяют разработчикам получать доступ к нескольким
+              endpoints за один вызов. Такие API часто используются в
+              микросервисной архитектуре, где для выполнения одной задачи может
+              потребоваться информация из нескольких источников.
+            </p>
+          </div>
+        </div>
+        <h2 class="ui header">Web API</h2>
+        <p>
+          Web API (Application Programming Interface) - это набор правил и
+          протоколов, которые позволяют взаимодействовать между разными
+          программными системами через Интернет. Они позволяют приложениям
+          отправлять и получать данные и инструкции, а также взаимодействовать с
+          удаленными серверами и сервисами. Вот основные виды web API:
+        </p>
+        <div class="ui bulleted list item list__p">
+          <div class="item item__header">
+            RESTful API (Representational State Transfer):
+          </div>
+          <p>
+            RESTful API являются одними из наиболее распространенных. Они
+            основаны на принципах REST, которые включают в себя использование
+            HTTP методов (GET, POST, PUT, DELETE) для выполнения операций над
+            ресурсами (например, URL), а также представление данных в формате,
+            как правило, JSON или XML.
+          </p>
+          <div class="item item__header">
+            SOAP API (Simple Object Access Protocol):
+          </div>
+          <p>
+            SOAP - это стандартный протокол обмена структурированными
+            сообщениями в реализации веб-сервисов. Он использует XML для
+            представления данных и может быть выполнен не только через HTTP, но
+            и через другие протоколы, такие как SMTP и TCP.
+          </p>
+          <div class="item item__header">GraphQL:</div>
+          <p>
+            GraphQL - это сравнительно новая технология API, разработанная
+            Facebook. В отличие от REST, GraphQL позволяет клиентам запросить
+            только те данные, которые им нужны, и получить их в едином запросе.
+            Это уменьшает ненужный трафик и делает API более гибким.
+          </p>
+          <div class="item item__header">JSON-RPC и XML-RPC:</div>
+          <p>
+            Эти протоколы позволяют вызывать удаленные методы и передавать
+            данные между клиентом и сервером в форматах JSON и XML
+            соответственно.
+          </p>
+          <div class="item item__header">WebSocket API:</div>
+          <p>
+            WebSocket API предоставляет двусторонний канал связи между клиентом
+            и сервером, что позволяет в режиме реального времени передавать
+            данные без необходимости постоянно инициировать новые запросы.
+          </p>
+          <div class="item item__header">OAuth и OpenID Connect:</div>
+          <p>
+            Эти протоколы используются для аутентификации и авторизации
+            пользователей в приложениях через сторонние сервисы, такие как
+            социальные сети или идентификационные провайдеры.
+          </p>
+          <div class="item item__header">Специфические API:</div>
+          <p>
+            Существуют также специфические API, предоставляемые различными
+            сервисами и компаниями. Примерами могут быть API Facebook, Twitter,
+            Google Maps и других сервисов.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <h4>
+        <i
+          >The site is built by Egor Parshutkin, using
+          <a href="https://semantic-ui.com" target="_blank"
+            ><b>SEMANTIC UI framework</b></a
+          ></i
+        >
+      </h4>
+    </footer>
+  </body>
+</html>
